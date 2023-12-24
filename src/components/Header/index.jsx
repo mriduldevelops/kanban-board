@@ -1,15 +1,13 @@
-import { useEffect, useRef, useState } from "react";
-import useTheme from "../../context/KanbanContext";
+import { useEffect, useRef, useState, useContext } from "react";
 import DialogBox from "../DiaologBox";
+import { KanbanContext } from "../../context/KanbanContext";
 
 const Header = () => {
+  const {theme, toggleTheme}= useContext(KanbanContext);
   const [active, setActive] = useState(false);
   const dialogRef = useRef(null);
 
-  const { theme, toggleTheme } = useTheme();
-
   const handleMode = () => {
-    const newTheme =  theme === 'light'?'dark':'light';
     toggleTheme();
   };
 
