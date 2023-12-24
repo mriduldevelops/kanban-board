@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header";
-import Board from "../Board/Index";
+import Board from "../Board";
 import { useContext } from "react";
 import { KanbanContext } from "../../context/KanbanContext";
 const KanbanBoard = () => {
