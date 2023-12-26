@@ -46,7 +46,7 @@ const Card = ({ cardData: { id, title, tag, status, userId, priority } }) => {
         {tag.map((item, i) => (
           <div
             key={i}
-            className="h-6 px-1 border border-zinc-200 flex items-center gap-1 rounded w-32 dark:border-zinc-500"
+            className="h-6 px-1 border border-zinc-200 flex items-center gap-1 rounded w-auto dark:border-zinc-500"
           >
             <div>
               <img className="w-[14px] h-[14px]" src={tagIcon} alt="" />
