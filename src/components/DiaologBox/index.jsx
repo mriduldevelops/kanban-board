@@ -31,9 +31,6 @@ const DialogBox = () => {
           <option value="priority" className="dark:bg-[#1a1d22]">
             Priority
           </option>
-          <option value="user" className="dark:bg-[#1a1d22]">
-            User
-          </option>
         </select>
       </div>
       <div className="flex items-center justify-between">

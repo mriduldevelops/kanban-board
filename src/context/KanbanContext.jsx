@@ -54,4 +54,3 @@ export const KanbanProvider = ({ children }) => {
   );
 };
 
-// Remove the unused function
